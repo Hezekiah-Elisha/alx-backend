@@ -13,9 +13,7 @@ def index() -> str:
     '''
     The home page function
     '''
-    title = 'Welcome to holberton'
-    header = 'Hello world'
-    return render_template('0-index.html', title=title, header=header)
+    return render_template('0-index.html')
 
 
 if __name__ == '__main__':
