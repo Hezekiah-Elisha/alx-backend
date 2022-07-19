@@ -14,6 +14,7 @@ class Config:
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
+
 app = Flask(__name__)
 app.config.from_object(Config)
 app.url_map.strict_slashes = False
@@ -26,7 +27,6 @@ def index() -> str:
     The home page function
     '''
     return render_template('1-index.html')
-
 
 
 if __name__ == '__main__':
